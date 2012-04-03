@@ -1,0 +1,1208 @@
+	/*start-reset*/
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	/*end-reset*/
+	.clearfix{
+		clear:both;
+	}
+	
+	body{
+		font-family:"Century Gothic";
+	}
+		
+	
+	@font-face {  
+		font-family: "Comfortaa";  
+		src: url(ComfortaaBold.ttf) format("truetype");  
+	}
+	@font-face {  
+		font-family: "[z] Arista";  
+		src: url([z] Arista.ttf) format("truetype");  
+	}
+	
+	@font-face{
+		font-family: "EdificeClassic";
+		src: url(EdificeClassic_TB.otf) format("truetype"); 
+	}
+	
+	@font-face{
+		font-family:"centabel";
+		src: url(centabel.ttf) format("truetype"); 
+	}
+	
+	@font-face{
+		font-family:"CareBears";
+		src: url(CareBearsFont.ttf) format("truetype"); 
+	}
+	
+	@font-face{
+		font-family:"Myriad Pro";
+		src: url(MyriadPro-Regular.otf) format("truetype"); 
+	}
+	#suplogo{
+		font-family: "CareBears";
+		font-size:33.5px;
+		height:37px;
+		background: -webkit-gradient(linear,left top, left bottom, from(#006587), color-stop(.75, #005977)); 
+		background: -moz-linear-gradient(top, #0192bf 25%, #016585 90%);
+		border-bottom:solid 2px #fff;
+		-webkit-box-shadow: 0 0 5px  #8b8787;  
+		-moz-box-shadow: 0 0 3px #8b8787;
+		color:#fdfdfd;
+		padding-left:0.7em;	
+	}
+	
+	#logoh1{
+		text-indent:0em !important;
+	}
+	.tab {
+		background: url(img/tab_b.png) repeat-x;
+		height: 42px;
+		z-index: 30;
+	}
+	
+	.tab ul.login {
+		display: block;
+		height: 42px;
+		width: auto;
+		font-weight: bold;
+		line-height: 42px;
+		color: white;
+		font-size: 80%;
+		text-align: center;
+	}
+	
+	.tab ul.login li.left {
+		height: 42px;
+		width: 150px;
+		padding: 0;
+		margin: 0;
+		display: block;
+		float: left;
+		text-indent:-999em;
+	}
+	
+	.tab ul.login li.right {
+		background: url(img/tab_r.png) no-repeat left 0;
+		height: 42px;
+		width: 30px;
+		padding: 0;
+		margin: 0;
+		display: block;
+		float: left;
+	}
+	
+	.tab ul.login li {
+		text-align: left;
+		padding: 0 6px;
+		display: block;
+		float: left;
+		height: 42px;
+		background: url(img/tab_m.png) repeat-x 0 0;
+	}
+	
+	.tab ul.login li a {
+		color: #15ADFF;
+		padding-right: 10px !important;
+	}
+	
+	.tab ul.login li a:hover {
+		color: white;
+		padding-right: 10px !important;
+	}
+	
+	.tab .sep {color:#414141}
+	
+	.tab a.open, .tab a.close {
+		height: 20px;
+		line-height: 20px !important;
+		padding-left: 30px !important;
+		cursor: pointer;
+		display: block;
+		width: 100px;
+		position: relative;
+		top: 11px;
+	}
+	
+	.tab a.open {background: url(img/bt_open.png) no-repeat left 0;}
+	.tab a.close {background: url(img/bt_close.png) no-repeat left 0;}
+	.tab a:hover.open {background: url(img/bt_open.png) no-repeat left -19px;}
+	.tab a:hover.close {background: url(img/bt_close.png) no-repeat left -19px;}
+	
+	#toppanel {
+		position: absolute;   
+		top:0;
+		width: 100%;
+		z-index: 30;
+	}
+	
+	#panel {
+		width: 100.7%;
+		height: 270px;
+		background: -webkit-gradient(linear,left top, left bottom, from(#0192bf), color-stop(.75, #016585)); 
+		background: -moz-linear-gradient(top, #0192bf 25%, #016585 90%); 
+		color: #f4f4f3;
+		position: relative;
+		display: none;
+		margin-left:-0.5em;
+	}
+	
+	#panel h3{
+		font-size: 1.2em;
+		padding: 5px 0 10px;
+		margin: 0;
+		color: white;
+	}
+	
+	#panel p {
+		margin: 5px 0;
+		padding: 0;
+	}
+	
+	#panel a {
+		text-decoration: none;
+		color: #15ADFF;
+	}
+	
+	#panel a:hover {
+		color: white;
+	}																	
+	
+	#panel a-lost-pwd {
+		display: block;
+		float: left;
+	}
+	
+	#panel .content {
+		width: 960px;
+		margin: 0 auto;
+		padding-top: 15px;
+		text-align: left;
+		font-size: 0.85em;
+	}
+	
+	#panel .content .left {
+		width: 280px;
+		float: left;
+		padding: 0 15px;
+		border-left: 1px solid #fff;
+	}
+	
+	#panel .content .right {
+		border-right: 1px solid #fff;
+	}
+	
+	#panel .content form {
+		margin: 0 0 10px 0;
+	}
+	
+	#panel .content label {
+		float: left;
+		padding-top: 8px;
+		clear: both;
+		width: 280px;
+		display: block;
+	}
+	
+	#panel .content input.field {
+		border: 1px #1A1A1A solid;
+		background: #414141;
+		margin-right: 5px;
+		margin-top: 4px;
+		width: 200px;
+		color: white;
+		height: 16px;
+	}
+	
+	#panel .content input:focus.field {
+		background: #545454;
+	}
+	
+	/* BUTTONS */
+	/* Login and Register buttons */
+	#panel .content input.bt_login,
+	#panel .content .bt_register {
+		display: block;
+		float: left;
+		clear: left;
+		width: 85px;
+		height: 26px;
+		text-align: center;
+		cursor: pointer;
+		border: none;
+		font-weight: bold;
+		text-decoration:none;
+		color:#000;
+		margin: 8px 0 0 0;
+		padding: 2px 0  0;
+		font-family:"Segoe UI";
+		background: -webkit-gradient(linear,left top, left bottom, from(#fbc701), color-stop(.75, #dcb114)); 
+		background: -moz-linear-gradient(top, #fbc701 25%, #dcb114 90%); 
+		border-radius: 5px;	
+	}
+	
+	input.bt_register {
+		display: block;
+		float: left;
+		clear: left;
+		width: 85px;
+		height: 26px;
+		text-align: center;
+		cursor: pointer;
+		border: none;
+		font-weight: bold;
+		text-decoration:none;
+		color:#000;
+		margin: 8px 0 0 0;
+		padding: 2px 0  0;
+		font-family:"Segoe UI";
+		background: -webkit-gradient(linear,left top, left bottom, from(#fbc701), color-stop(.75, #dcb114)); 
+		background: -moz-linear-gradient(top, #fbc701 25%, #dcb114 90%); 
+		border-radius: 5px;	
+	}
+	
+	#panel .content .bt_register a:link{
+	text-decoration:none;
+	color:#000;
+	}
+	
+	#panel .content .bt_register a:visited{
+	text-decoration:none;
+	color:#000; 
+	}
+	
+	#panel .content input.bt_login {
+		width: 85px;
+		height: 26px;
+		background: -webkit-gradient(linear,left top, left bottom, from(#fff), color-stop(.75, #d0d2d6)); 
+		background: -moz-linear-gradient(top, #fff 25%,  #d0d2d6 90%); 
+		border-radius: 5px;	
+	}
+	
+	#panel .lost-pwd {
+		display: block;
+		float:left;
+		clear: right;
+		padding: 15px 5px 0;
+		font-size: 0.95em;
+		text-decoration: underline;
+	}
+	
+	#fbconect{
+		padding-top:1em;
+	}
+	
+	/*end-sliding panel */
+	
+	/*start-contactform*/
+	.sign_up {
+		-moz-border-radius: 5px;
+		background: #eef2f7;
+		-webkit-border-radius: 5px;
+		border: 1px solid #536376;
+		-webkit-box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+		-moz-box-shadow:  rgba(0,0,0,.6) 0px 2px 12px;
+		padding: 14px 22px;	
+		position: relative;
+		display: none;
+	}
+	    
+	.sign_up label {
+		display: block;
+		margin-bottom: 6px; 
+		color: #536376;
+		font-size: 0.9em;
+	}
+	  
+	.sign_up label input {
+		display: block;
+		width: 380px;
+		height: 31px;
+		font-size: 12px;
+		line-height: 31px;
+	}
+	.close { 
+		background: url(img/close.png) no-repeat;
+		width: 24px;
+		height: 23px;
+		overflow: hidden; 
+		line-height: 1000px;
+		display: block;
+		position: absolute; 
+		top: 5px; 
+		right: 5px;        
+	}
+	
+	#sign_up1{
+		width: 530px;
+		height: 290px;
+	
+	}	
+		
+	#sign_up2 {
+		width: 550px;
+		height: 550px;
+	}
+	
+	#terminos{
+		width: 560px;
+		height: 530px;
+	}
+	
+	.rojo{
+		color:#d52121;
+	}
+	
+	/*end-contactform*/
+	
+	/*start-contenido*/
+	#contenido{
+		width:100%;
+		overflow:hidden;
+		padding-bottom:1em;
+		padding-top:3.5em;
+		/*border: solid 3px #000;*/
+		/*-webkit-box-shadow: inset 0 0 10px  #000;  
+		-moz-box-shadow: inset 0 0 10px #000;*/
+	}
+	
+	#izquierda{
+		float:left;
+		width:650px;
+		border: solid 1px #000;	
+	}
+	
+	#centro{
+		float:left;
+		width:470px;
+		/*border: solid 3px red;*/	
+		position:relative;
+	}
+	
+	#centro-sup{
+		float:left;
+		width:470px;
+		height:100px;
+		border:solid 1px #906;
+	
+	}
+	
+	#centro-inf{
+		float:left;
+		width:470px;
+		height:100px;
+		border:solid 1px #0F9;
+		
+	}
+		
+	#derecha{
+		float:right;
+		width:220px;
+		border: solid 1px blue;
+	}
+	
+	/*end-contenido*/
+	
+	/*start-next*/
+		#siguientes{
+			width:95%;
+			border:solid 1px #60F;
+			position:relative;
+			margin:auto;
+		}
+		
+		#nominados{
+			width:95%;
+			border:solid 1px #C60;
+			position:relative;
+			margin:auto;
+		}
+			height:100px;
+	/*end-next*/
+	
+	/*star-calificacion*/
+	.numcalif{
+		font-size:25px;
+		font-weight:bold;
+	}
+	
+	.calif{
+		background: rgba(254, 254, 254, 0.7);
+		width:75px;
+		height:40px;
+		font-size:12px;
+		position:absolute;
+		left:10px;
+		bottom:10px;
+	}
+	/*end-calificacion*/
+	
+	/*start-conoceramigo*/
+	
+			#bloqueconoceramigo{
+				position:relative;
+			}
+			
+			.foto-conoceramigo{
+				padding: 12.5px 5px 0 12px;
+				margin:auto;
+				float:left;
+			}
+			
+			.foto-conoceramigo img{
+				width:85px;
+				height:110px;
+			}
+			
+			.content-fotoamigo{
+				width:85px;
+				height:110px;
+				border:solid 3px #079bcb;
+				border-radius:3px;
+				position:relative;
+				
+			}
+			.content-fotoamigo:hover{
+				border:solid 3px #c02c26;
+				width:85px;
+				height:110px;
+			}
+			.boton-conocer{
+				bottom:0;
+				left:0;
+				padding-bottom:2px;
+				position:absolute;
+				background:rgba(255,255,255,0.6);
+				width:85px;
+				height:15px;
+				font-size:13px;
+				font-weight:bold;
+				
+			}
+			.letra-conocer{
+				text-align:center;
+			}
+			.conocer-corazones{
+				width:20px !important;
+				height:20px !important;
+			}
+			
+		/*end-conoceramigo*/
+		
+	/*start-izqfoto*/
+	
+	#basefoto {
+		background-color: #ffffff;
+		border: 1px solid #e6e6e6;	
+		width:29.5em;
+		position:relative;
+		left:100px;
+		padding:5px 5px 5px 5px;
+		/*-webkit-box-shadow: 2px 2px 10px  #777;  
+		-moz-box-shadow: inset 0 0 30px #969696;*/
+	}
+	
+	#votacion{
+		width:480px;
+		height:30px;
+	}
+	
+	#adsbanner{
+		text-align:center;
+	}
+	
+	
+	/*start-stars*/
+		#estrellas{
+			float:left;
+			margin:auto;
+			padding-top:0.4em;
+			position:relative;
+			width:321px;
+		}
+		
+		.star-rating{
+			width:320px;
+			height:16.5px;
+			background: url(img/stargris.gif) repeat-x;
+		}
+		
+		.star-rating li{
+			float:left;
+			text-decoration:none;
+			color:#a9a9a9;
+			font-size: 13px;
+			padding-left:28px;
+		}
+		/*end-starts*/
+		
+		
+		
+		/*start-buscar*/
+			#buscar{
+				font-size:12px;
+				text-align:center;
+			}
+		/*end-buscar*/
+		
+		/*start-foto*/
+			#fotoprincipal{
+				
+				padding-top:0.6em;
+			}
+			
+			#fondofoto{
+				background-color: #e6e6e6;
+				border-radius: 7px;
+				padding:7px 7px 7px 7px;
+			}
+			
+			#foto{
+				text-align:center;
+				position:relative;
+			}
+	
+			#datosfoto{
+				background:rgba(161,205,251,0.7);
+				width:96%;
+				display:none;
+				position:absolute;
+				bottom:0;
+				left:2%;
+			}
+			
+			#descripcion{
+				height:15px;
+				color:#10426c;
+				font-weight:bold;			
+			}
+			
+			#desc2{
+				text-align:left;
+				height:80px;
+				text-transform:lowercase;
+				font-size:13px;
+				padding:7px 7px 0 7px;
+				overflow:auto;
+				word-spacing: 0.3em;
+			}
+			
+		/*end-foto*/
+		
+		/*start-compartir*/
+			#sharelink{
+				padding:0.2em 0 0 1em;
+				font-family:"Ammys Handwriting";
+				font-size:14px;
+			}
+			
+			#botones{
+				padding-top:0.3em;
+				text-align:center;
+			}
+			#redessociales{
+				padding-top:0.1em;
+				margin-left:1.7em;
+				text-align:center;
+				border: solid 1px #cad2db;
+				width:400px;
+			}
+		/*end-compartir*/
+	
+	/*end-izqfoto*/
+	/*start-footer*/
+	
+	footer{
+			/*background: -webkit-gradient(linear,left top, left bottom, from(#eb9f0c), color-stop(.50, #eea517)); 
+			background: -moz-linear-gradient(top, #fbc701 25%, #dcb114 90%);*/
+		width:100%;
+		height:40px;
+	}
+	
+	#foot-izq{
+		float:left;
+		width:1000px;
+		padding-left:5.5em;
+	}
+	
+	#foot-der{
+		float:left;
+		width:260px;
+		text-align:center;
+	}
+	
+	#pie{
+		list-style: none;
+		font-family:"Century Gothic";
+		font-size: 14px;
+		display:block;
+	}
+	
+	#pie li{
+		float:left;
+		padding-left:1em;
+	}
+	
+	#pie a{
+		text-decoration:none;
+		color:#064762; 
+	}
+	
+	#pie a:hover{
+		color:#064762;
+		text-decoration:underline;
+	}
+	
+	#derechos{
+		font-size: 12px !important;
+		padding-top:2.5px;	
+		width:100%;
+		height:17px;
+		background:#016585;
+		color:#fff;
+		text-align:center;	
+	}
+	
+	/*end-footer*/
+	
+	/*start-panel*/
+	#panelizq{
+		float:left;
+		width:17%;
+		margin-top:-2.3em;
+	}
+	#panelcentro{
+		float:left;
+		width:63%;
+		margin-top:-2.3em;
+		padding-left:3px;
+	}
+	
+	#panelder{
+		float:right;
+		width:19.5%;
+		position:relative;
+		margin-top:-3.5em;
+	}
+	
+	#panelcentroder{
+		float:left;
+		width:49.5%;
+	}
+	#panelcentroizq{
+		width:50%;
+		float:left;
+	}
+	
+	#menupanel{
+		width:210px;
+		background:#f5f5f5;
+		margin:auto;
+	}
+	
+	#datospanel{
+		float:right;
+		border:solid 4px #c8c8c8;
+		width:340px;
+		height:444px;
+	}
+	#conectados{
+		width:100%;
+		height:760px;
+		position:relative;
+		border-left: solid 5px #e5f8ff;
+		background:#f9fefe;
+		margin-bottom:-1em;
+	}
+	
+	#conectados li{
+		width:98%;
+		padding-top:2.5px;
+		padding-bottom:2.5px;
+	}
+	
+	#conectados li:hover{
+		background:#e5f8ff;	
+	}
+	
+	.letconectados{
+		font-size:14px;
+		line-height:28px;
+		cursor:default;
+	}
+	
+	.imgconectados{
+		margin-right:5px;
+		margin-left:5px;
+		width:28px;
+		height:28px;
+		float:left;
+	}
+	
+	.conocemas{
+		color:#83caca;
+		text-align:center;
+		font-size:13px;
+		text-decoration:none;
+		margin-top:11px;
+	}
+	
+	#lineaconect{
+		color:#83caca;
+		font-size:15px;
+		text-align:center;
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+	
+	.imgmail{
+		vertical-align:middle;
+		width:26px;
+		height:21px;
+		float:right;
+	}
+	
+	.imgregalo{
+		vertical-align:middle;
+		width:25px;
+		height:25px;
+		float:right;
+	}
+	
+	.panelpartes{
+		margin:auto;
+		display:block;
+		height:35px;
+		text-align:center;
+		font-size:34px;
+		font-family: "Stentiga";
+		color:#8a8a8a;
+		padding:0.5em 0 0.5em 0;
+	}
+	
+	.panelpartes a{
+		display:block;
+		text-decoration: none;
+		color:#8a8a8a;
+	}
+	
+	.panelpartes a:hover{
+		text-decoration:none;
+		color:#fff;
+	}
+	
+	#panelperfil2{
+		background:#9cd228;
+		display:none;
+	}
+	
+	.csshover{
+		background:#a7dd33;
+		border: solid 4px #8aba24;
+		border-style:dashed;
+	}	
+	.cssanexo{
+		background:#f5f5f5;
+		height:35px;
+	}
+	
+	#panelinicio:hover{
+		background:#2fa7df;
+		border: solid 4px #208abc;
+		border-style:dashed;
+	}
+	
+	#panelperfil:hover{
+		background:#9cd228;
+		border: solid 4px #8aba24;
+		border-style:dashed;
+	}
+		
+	#panelmensajes:hover{
+		background:#eee720;
+		border: solid 4px #d9d32a;
+		border-style:dashed;
+	}
+	#panelamistad:hover{
+		background:#f83193;
+		border: solid 4px #b20d5e;
+		border-style:dashed;
+	}
+	#panelfavoritos:hover{
+		background:#a941eb;
+		border: solid 4px #791eb2;
+		border-style:dashed;
+	}
+	#panelbesos:hover{
+		background:#07bda1;
+		border: solid 4px #05816e;
+		border-style:dashed;
+	}	
+	#panelcuenta:hover{
+		background:#f02323;
+		border: solid 4px #c21212;
+		border-style:dashed;
+	}
+	#panelprivacidad:hover{
+		background:#e8a729;
+		border: solid 4px #c28612;
+		border-style:dashed;
+	} 
+	
+	#fotopanel{
+		width:440px;
+		text-align:center;
+		position:relative;
+	}
+	
+	#enlinea{ 
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	
+	#chart_div{
+		float:right;
+	}
+	
+	#invitacion{
+		margin-top:5px;
+		width:438px;
+		height:50px;
+		border:solid 1px #c0e2f2;	
+	}
+	
+	/*end-panel*/
+	
+	/*start-mensajes*/
+	
+	#mensajes{
+		overflow:hidden;
+	}
+	
+	#menumensajes{
+		background:url("img/bgmensaje.png");
+		height:600px;
+		width:30%;
+		float:left;
+	}
+	
+	#contenidomensajes{
+		border: solid 1px #e2b70c;
+		height:599px;
+		width:69%;
+		float:left;
+		position:relative;
+	}
+	
+	.letbandeja{
+		color:#000;
+		font-size:17px;
+		font-weight:bold;
+		font-family: "EdificeClassic";
+		text-decoration:none;
+		vertical-align:super;
+	}
+	
+	#bandeja li{
+		border-bottom: solid 1px #e2b70c;
+	}
+	
+	#bandeja li:hover{
+		background:#fee6ab;
+	}
+	
+	#nuevo{
+		width:27px;
+		height:25px;
+		padding:5px 10px 5px 10px;
+	}
+	
+	#buzon{
+		width:30px;
+		height:25px;
+		padding:5px 10px 5px 10px;
+	}
+	
+	.enviados{
+		width:30px;
+		height:23px;
+		padding:5px 10px 5px 10px;
+	}
+		
+	#parade{
+		width:110px;
+	}
+	
+	#asunto{
+		width:300px;
+	}
+	
+	#fecha{
+		width:100px;
+	}
+	
+	#cuadrito{
+		background-color:#fdf4ba;
+		text-align:center;
+	}
+	
+	.mende{
+		width:110px;
+		vertical-align:middle;
+		text-align:center;
+	}
+		
+	.menasunto{
+		width:290px;
+		vertical-align:middle;
+		padding-left:10px;
+	}
+	
+	.menasunto a:link{
+		color:#5088dd;
+		text-decoration:none;
+	}
+	
+	.menasunto a:visited{
+		color:#000;
+		text-decoration:none;
+	}	
+	.menfecha{
+		width:100px;
+		vertical-align:middle;
+		text-align:center;
+	}
+	.noleido{
+		font-weight:bold;
+	}
+		
+	table.tablesorter thead tr .header {
+		border:0;
+		background-image: url(img/desc.gif);
+		background-color:#fdf4ba;
+		cursor: pointer;
+		font-family: "EdificeClassic";
+		font-size:13px;
+		
+	}
+	table.tablesorter tbody td {
+		background-color: #FFF;
+		font-family:"Segoe UI";
+		font-size:12px;
+		border:0;
+		border-bottom:solid 1px #ffe580;
+	}
+	
+	table.tablesorter thead tr .headerSortUp {
+		background-image: url(img/asc.gif);
+	}
+	table.tablesorter thead tr .headerSortDown {
+		background-image: url(img/desc.gif);
+	}
+	
+	#nmbm{
+		background-color:#fdf4ba;
+		font-family: "EdificeClassic";
+		font-size:14px;
+		border-bottom:solid 1px #e2b70c;
+	}
+
+	#delmen{
+		display:block;
+		padding: 5px 5px 5px 5px;
+		color:#000;
+		text-decoration:none;
+		
+	}
+		
+	#delmen:hover{
+		background:#ffe580;
+	}
+	
+	#delmen a:link{
+		color:#000;
+		text-decoration:none;
+	}
+	#delmen a:visited{
+		color:#000;
+		text-decoration:none;
+	}
+	
+	#tablacontent{
+		position:absolute;
+		top:16px;
+	}
+			
+	/*end-mensajes*/
+
+
+	/*start-amigos*/
+	
+		#amigoscentrosup{
+			height:600px;
+		}
+		#amigoscentrosup1{
+			height:570px;
+		}
+		#amigoscentrosup2{
+			height:30px;
+		}
+		#amigosupizq{
+			width:33%;
+			height:570px;
+			float:left;
+		}
+		#amigosupcentro{
+			width:33%;
+			float:left;
+			height:570px;
+		}
+		#amigosupder{
+			width:33%;
+			float:left;
+			height:570px;
+		}
+		
+		#amigoscentroinf{
+			height:120px;
+		}
+		
+		#amigoscentroinf2{
+			float:left;
+			width:100%;
+		}
+		
+		#slides {
+			position:absolute;
+		}
+
+.slides_container {
+	width:750px;
+	
+}
+
+.slides_container div.slide {
+	width:750px;
+	height:100px;
+	display:block;
+	border:solid 1px #000;
+}
+
+
+		.next,.prev {
+			position:absolute;
+			top:45px;
+			left:-15px;
+			width:24px;
+			height:43px;
+			display:block;
+			}
+
+		.next {
+			left:787px;
+			z-index:3;
+		}
+			
+		.imgamigos{
+			padding:5px 5px 5px 5px;
+			float:left;
+			-moz-box-shadow: 2px 2px 3px #969696; 
+			-webkit-box-shadow: 2px 2px 3px #969696;
+		}
+		
+		.nombreamigos{
+			float:left;
+			font-family:"Myriad Pro";
+			font-size:18px;
+			padding:22px 0 0 10px;
+			display:block;
+		}
+		
+		.nombreamigos a:link{
+			color:#000;
+			text-decoration:none;
+		}
+		
+		.nombreamigos a:visited{
+			color:#000;
+			text-decoration:none;
+		}
+		
+		.listamigos{
+			float:left;
+			width:100%;
+		}
+		.listamigosespera{
+			float:left;
+			padding:5px 0 0 8px;
+		}
+		#enespera{
+			font-family: "Comfortaa"; 
+			color:#087590;
+			font-size:18px;
+			padding:7px 0 0 20px;
+		}
+		
+		.nombreamigoespera{
+			display:block;
+			font-size:11px;
+			float:left;
+			padding-top:5px;
+		}
+		
+		.imgamigoespera{
+			padding:5px 5px 5px 5px;
+			-moz-box-shadow: 2px 2px 3px #969696; 
+			-webkit-box-shadow: 2px 2px 3px #969696;
+		}
+		.divespera{
+			text-align:center;
+		}
+		
+		
+	/*end-amigos*/
+	
+	
+	

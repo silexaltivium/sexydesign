@@ -1,0 +1,134 @@
+*start-panel*/
+#panelizq{
+	float:left;
+	width:20%;
+}
+#panelcentro{
+	float:left;
+	width:57%;
+}
+
+#panelder{
+	float:left;
+	width:20%;
+	background:#000;
+}
+
+#panelcentroder{
+	float:left;
+	
+}
+#panelcentroizq{
+	width:490px;
+	float:left;	
+}
+
+
+#menupanel{
+	width:210px;
+	height:489px;
+	background:#e6e6e6;
+	border: solid 1px #bfbebe;
+	margin:auto;
+}
+
+.panelpartes{
+	margin:auto;
+	height:35px;
+	text-align:center;
+	font-size:34px;
+	font-family: "Stentiga";
+	color:#767674;
+	border-bottom: solid 1px #bfbebe;
+	padding:0.5em 0 0.5em 0;
+}
+
+
+.panelpartes a{
+	text-decoration: none;
+	color:#767674;
+}
+
+.panelpartes a:hover{
+	text-decoration:none;
+	color:#fff;
+}
+
+#panelperfil2{
+	background:#9cd228;
+	display:none;
+	width:210px;
+	height:140px;	
+}
+
+.csshover{
+	background:#9cd228;
+}
+
+.cssanexo{
+	background:#e6e6e6;
+	border-bottom: solid 1px #bfbebe;
+	border-left: solid 1px #bfbebe;
+	border-right: solid 1px #bfbebe;
+	width:210px;
+	height:35px;
+	margin-left:-0.04em;
+}
+
+#panelinicio:hover{
+	background:#2fa7df;
+}
+
+#panelperfil:hover{
+	background:#9cd228;
+}
+
+#panelmensajes:hover{
+	background:#eee720;
+}
+#panelamistad:hover{
+	background:#f83193;
+}
+#panelfavoritos:hover{
+	background:#a941eb;
+}
+
+#panelcuenta:hover{
+	background:#f02323;
+}
+#panelprivacidad:hover{
+	background:#e8a729;
+}
+
+#fotopanel{
+	border:solid 20px #eee720;
+	width:440px;
+	margin:auto;
+	padding: 5px 5px 5px 5px;
+	float:left;
+}
+#panelcalif{
+	border:solid 20px #000;
+	width:150px;
+	height:140px;
+}
+
+#panelfotodatos{
+	float:left;
+	width:450px;
+	border:solid 20px #000;
+}
+
+#panelinfo{
+	border:solid 20px #000;
+	width:180px;
+	height:250px;
+}
+
+#invitacion{	
+	margin:auto;
+	width:440px;
+	height:50px;
+	border:solid 1px #c0e2f2;	
+}
+/*end-panel*/

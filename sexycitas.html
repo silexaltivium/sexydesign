@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+    <head>
+        <title>Sexycitas</title>
+        
+        <meta charset="utf-8">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Last-Modified" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script> 
+	<script src="js/jquery.lightbox_me.js"></script> 
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Kreon:700&v2' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="sexycitas.css">
+	<!--[if IE]> <link href="sexycitasie.css" rel="stylesheet" type="text/css"> <![endif]-->
+
+	<script>
+
+	$(document).ready(function() {
+	
+            // Expand Panel
+            $("#open").click(function(){
+                $("div#panel").slideDown("slow");
+            });	
+	
+            // Collapse Panel
+            $("#close").click(function(){
+                $("div#panel").slideUp("slow");	
+	    });
+		
+            // Switch buttons from "Log In | Register" to "Close Panel" on click
+            $("#toggle a").click(function () {
+                $("#toggle a").toggle();
+            });		
+		
+            $('#try-1').click(function(e) {
+                $('#sign_up1').lightbox_me({
+                    centered: true, 
+        		onLoad: function() { 
+                $('#sign_up1').find('input:first').focus()
+			}
+                });
+                    e.preventDefault();
+        	});
+    	
+        	$('#acepto').click(function(e) {
+		$('<iframe id="terminos" name="terminos">').appendTo('#sign_up2').attr('src', 'terminos.html');
+		$('#sign_up2').lightbox_me({
+		centered: true, 
+		
+		onClose: function() {
+		$('#terminos').remove();
+		}
+		});
+    e.preventDefault();
+	});
+	
+	$("#fotoprincipal").hover(function () {
+	    $("#datosfoto").fadeIn();
+	}, function(){
+	    $("#datosfoto").fadeOut();
+	});
+});
+	</script> 
+    </head>
+
+    <body>
+<!--panel!-->
+<!-- Ingreso -->	
+<div id="toppanel">
+    <div id="panel">
+	<div class="content clearfix">
+	    <div class="left">
+		<form class="clearfix" action="#" method="post">
+		    <h3>Ingresar</h3>
+		    <label for="log">Nombre de Usuario:</label>
+		    <input class="field" type="text" name="log" id="log" value="" size="23" />
+		    <label  for="pwd">Contrase&ntilde;a:</label>
+		    <input class="field" type="password" name="pwd" id="pwd" size="23" />
+		    <label>
+		        <input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever" /> &nbsp;Recordarme
+		    </label>
+		    <div class="clear"></div>
+		    <input type="submit" name="submit" value="Entrar" class="bt_login" />
+		</form>
+		<div id="fbconect">
+		<a href="#"><img id="fbconect" src="img/fb_connect.png"></a>
+		</div>
+	    </div>
+	    <!-- Registro -->
+	    <div class="left">
+		<form action="#" method="post">
+		    <h3>Registro</h3>				
+		    <label class="grey" for="signup">Llena el formulario:</label>
+		    <a href="#" class="bt_register" id="try-1">Registrarme</a>
+		    <label class="grey" for="email">&oacute registrate con Facebook:</label>
+		    <label></label><label></label>
+		</form>
+		<div id="fbregistro">
+		    <a href="#"><img src="img/fb_register.png"></a>
+		</div>
+		<label></label><label></label><label></label><label></label><label></label>
+		<label></label><label></label><label></label>
+	    </div>
+	    
+	</div>
+    </div> 
+	<!-- The tab on top -->
+	  
+    <div class="tab">
+	<ul class="login">
+	    <li id="suplogo" class="left"><h1 id="logoh1">sexycitas</h1>conoce, califica, enamorate y encuentra a tu media naranja  </li>
+	    <li>Hola Invitado!</li>
+	    <li class="sep">|</li>
+	    <li id="toggle">
+		<a id="open" class="open" href="#">Entrar|Registrarse</a>
+		<a id="close" style="display: none;" class="close" href="#"> Cerrar</a>			
+	    </li>
+        <li class="right">&nbsp; </li>
+	</ul> 
+    </div> <!-- top -->
+</div> <!--panel -->
+
+<div class="sign_up" id="sign_up1"> 
+    <div id="sign_up_form"> 
+	<form>
+	    <label><strong>Nombre de Usuario:</strong>
+		<input type="text" />
+	    </label>
+	    <label><strong>Contrase&ntilde;a:</strong>
+		<input type="password" />
+	    </label>
+	    <label><strong>Confirmar contrase&ntilde;a:</strong>
+		<input type="password" />
+	    </label>
+	    <label><strong>Correo:</strong>
+		<input type="text" />
+	    </label>	    
+	    <input type="checkbox">
+	    <a href="terminos.html" id="acepto">Acepto los terminos y condiciones</a>
+	    <label></label>
+	    <input type="submit" class="bt_register" value="Registrarme">  
+        </form>
+    </div> 
+    <a id="close_x" class="close" href="#">close</a>
+</div> 
+<div class="sign_up" id="sign_up2"> 
+    <div id="sign_up_form"> 
+	<label><strong>Terminos y condiciones</strong></label>
+	<label></label>
+    </div> 
+    <a id="close_x" class="close" href="#">close</a> 
+</div> 
+   
+<div id="contenido">
+	<div id="izquierda">
+	   <div id="basefoto">
+       		<div id="adsbanner">
+		    	<img src="img/adsense468x60.png" />  
+			</div>
+		<div id="votacion">
+		  <!--  <div id="nosexy">no</div>-->
+		    <div id="estrellas">
+				<ul class="star-rating">
+			    	<li><a href="#" class="one-star">1</a></li>
+				    <li><a href="#" class="two-stars">2</a></li>
+				    <li><a href="#" class="three-stars">3</a></li>
+				    <li><a href="#" class="four-stars">4</a></li>
+				    <li><a href="#" class="five-stars">5</a></li>
+			    	<li><a href="#" class="six-stars">6</a></li>
+				    <li><a href="#" class="seven-stars">7</a></li>
+				    <li><a href="#" class="eight-stars">8</a></li>
+				    <li><a href="#" class="nine-stars">9</a></li>
+				    <li><a href="#" class="ten-stars">10</a></li>
+				</ul>
+		    </div>
+		</div>
+		<div id="fondofoto">
+		    <div id="buscar">
+				<form>
+			    	<label>Sexo</label>
+				    <select>
+				    	<option>Selecciona...</option>
+				    </select>
+				    <label>Edad</label>
+			    	<select>
+		    			<option>Selecciona...</option>
+				    </select>
+				    <label>PS</label>
+				    <select>
+						<option>Selecciona...</option>
+				    </select>
+				</form>
+		    </div>
+		    <div id="fotoprincipal">
+				<div id="foto">
+			    	<img src="img/foto1.jpg" />
+			    	<div id="datosfoto">
+						<p id="descripcion">Descripcion:</p>
+					    <p id="desc2">
+						ME ENCANTA SONRREIR, TENGO BUEN SENTIDO DEL HUMOR, NADAR, ESCUCHAR MUSICA TODO EL TIEMPO, TOMAR UN BUEN CAFE CON UN               			BUEN CIGARRO Y COMPARTIR TIEMPO CON MIS HIJAS. ME ENCANTA SONRREIR, TENGO BUEN SENTIDO DEL HUMOR, NADAR, ESCUCHAR 																																								MUSICA TODO EL 			TIEMPO, TOMAR UN BUEN CAFE CON 			UN BUEN CIGARRO Y                       COMPARTIR TIEMPO CON MIS HIJAS. ME ENCANTA 	SONRREIR, TENGO BUEN SENTIDO DEL HUMOR, NADAR, ESCUCHAR MUSICA TODO EL TIEMPO, TOMAR UN BUEN CAFE CON UN BUEN CIGARRO Y                   COMPARTIR TIEMPO CON MIS HIJAS. ME ENCANTA SONRREIR, TENGO BUEN SENTIDO DEL HUMOR, NADAR, ESCUCHAR MUSICA TODO EL TIEMPO, TOMAR UN BUEN CAFE CON UN BUEN CIGARRO Y                    COMPARTIR TIEMPO CON MIS HIJAS.
+			   			</p>
+			    	</div>	
+			    </div>
+		    </div>		    
+		    <div id="sharelink">
+				<form>
+			    	<label>Sharelink:</label><input type="text" size="57"  readonly />
+				</form>
+		    </div>
+		    <div id="botones">
+				<a href="#" title="Denunciar"><img src="img/denunciar.png" /></a>
+				<a href="#"><img src="img/favorito.png" /></a>
+				<a href="#"><img src="img/nominar.png" /></a>
+				<a href="#"><img src="img/conocer.png" /></a>
+		    </div>
+		    <div id="redessociales">
+				<a href="#"><img src="img/facebook.png" title="Comparte en Facebook"/></a>
+				<a href="#"><img src="img/twitter.png" title="Comparte en Twitter"/></a>
+				<a href="#"><img src="img/myspace.png" title="Comparte en MySpace"/></a>
+		    </div>
+		</div>
+	</div>
+</div>
+	
+	<div id="centro">
+    	<div id="centro-sup">
+        	<div id="siguientes">
+            sdaasddasdasdasdsa
+            </div>   
+        </div>
+	    <div id="centro-inf">
+        	<div id="nominados">
+            	djdajkldjasklslda
+            </div>
+        </div>
+    </div>
+    <div id="derecha"></div>
+    
+</div>    
+	
+    
+<footer>
+	<div id="foot-izq">
+	    <ul id="pie">
+		<li><a href="#">Conocer amigos</a></li>
+		<li><a href="#">Votado del dia</a></li>
+		<li><a href="#">Terminos y Condiciones</a></li>
+		<li><a href="#">Contacto</a></li>
+	    </ul>
+	</div>
+	<!--<div id="foot-der">
+	    <a href="#"><img src="img/masuno.png"></a><br />
+	    <a href="#"><img src="img/followface.png"></a>
+	</div>-->
+ </footer>
+    
+    <div class="clearfix"></div>
+    <div id="derechos">sexycitas @2011 Todos los derechos reservados.</div>
+    </body>
+
+</html>

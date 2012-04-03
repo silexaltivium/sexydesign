@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+    <head>
+        <title>Sexycitas</title>
+        <meta charset="utf-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="jquery.tablesorter.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css" id="" media="print, projection, screen" />
+        <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Kreon:700&v2' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="sexycitas.css">
+	  <!--  <link rel="stylesheet" type="text/css" href="stilo2.css">!-->
+	<!--[if IE]> <link href="sexycitasie.css" rel="stylesheet" type="text/css"> <![endif]-->
+	<script>
+	
+	$(document).ready(function() {
+	    $("#panelperfil").hover(function () {
+		$("#panelperfil2").fadeIn();
+		$("#panelfavoritos").addClass("cssanexo");
+		$("#panelprivacidad").addClass("cssanexo");
+		$("#panelcuenta").addClass("cssanexo");
+	        }, function () {
+		$("#panelperfil2").hover(function () {
+		    $("#panelperfil2").show();
+		    $("#panelperfil").addClass("csshover");
+		}, function () {
+		    $("#panelperfil2").fadeOut();
+		    $("#panelperfil").removeClass("csshover");
+		},  function () {
+		    $("#panelfavoritos").removeClass("cssanexo");
+		    $("#panelprivacidad").removeClass("cssanexo");
+		    $("#panelcuenta").removeClass("cssanexo");
+		});
+	    $("#panelperfil2").hide();
+	    });
+	});
+	  
+	</script>
+        
+        <script type="text/javascript">
+		$(function() {
+			$("table").tablesorter({debug: true});
+		});
+		</script>
+	
+                
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Year');
+        data.addColumn('number', 'Expenses');
+        data.addRows(10);
+        data.setValue(0, 0, '1');
+        data.setValue(0, 1, 10);      
+        data.setValue(1, 0, '2');
+        data.setValue(1, 1, 1);
+        data.setValue(2, 0, '3');
+        data.setValue(2, 1, 0);
+        data.setValue(3, 0, '4');
+        data.setValue(3, 1, 0);
+	data.setValue(4, 0, '5');
+        data.setValue(4, 1, 5);
+	data.setValue(5, 0, '6');
+        data.setValue(5, 1, 0);
+	data.setValue(6, 0, '7');
+        data.setValue(6, 1, 0);
+	data.setValue(7, 0, '8');
+        data.setValue(7, 1, 0);
+	data.setValue(8, 0, '9');
+        data.setValue(8, 1, 0);
+	data.setValue(9, 0, '10');
+        data.setValue(9, 1, 5);
+        
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: 450, height: 240, colors:['#90c916'],
+                          hAxis: {title: 'Calificacion', titleTextStyle: {color: 'black'}}
+                         });
+      }
+    </script>
+    </head>
+    
+    <body>
+    
+    <div id="divisionazul"></div>
+    
+    <div id="suplogo" class="left">
+	   <h1 id="logoh1">sexycitas</h1>
+	   <div id="compie"></div>
+	</div>
+    
+   <div id="contenido">
+	<div id="panelizq">
+	   <div id="menupanel">
+	        <div class="panelpartes" id="panelinicio"><a href="#">Inicio</a></div>
+	        <div class="panelpartes" id="panelperfil"><a href="#">Perfil</a></div>
+	        <div id="panelperfil2">
+	            <div class="panelpartes" id="datospersonales"><a href="#">Datos</a></div>
+	            <div class="panelpartes" id="rasgosfisicos"><a href="#">Rasgos</a></div>
+	        </div>
+	        <div class="panelpartes" id="panelmensajes"><a href="#">Mensajes</a></div>
+	        <div class="panelpartes" id="panelamistad"><a href="#">Amigos</a></div>
+		<div class="panelpartes" id="panelbesos"><a href="#">Flirt</a></div>
+		<div class="panelpartes" id="panelfavoritos"><a href="#">Favoritos</a></div>
+		<div class="panelpartes" id="panelcuenta"><a href="#">Cuenta</a></div>
+	        <div class="panelpartes" id="panelprivacidad"><a href="#">Privacidad</a></div>
+	    </div>
+	</div>
+	<div id="panelcentro">
+	   <div id="mensajes">
+                <div id="menumensajes">
+                    <div id="bandeja">
+                        <ul>
+                            <li>
+                                <a href="#"  class="letbandeja">
+                                    <img id="nuevo" src="img/nuevo.png">
+                                    <span  class="letbandeja">Nuevo Mensaje</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"  class="letbandeja">
+                                    <img id="buzon" src="img/buzon.png">
+                                    <span class="letbandeja">Buzon (7)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="letbandeja">
+                                    <img class="enviados" src="img/enviados.png">
+                                    <span  class="letbandeja">Enviados</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"  class="letbandeja">
+                                    <img class="enviados" src="img/borradores.png">
+                                    <span  class="letbandeja">Borradores</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"  class="letbandeja">
+                                    <img class="enviados" src="img/bote.png">
+                                    <span  class="letbandeja">Papelera</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="contenidomensajes">
+                     <div id="nmbm">
+                        <a id="delmen" href="#">Borrar Mensaje(s) </a>
+                    </div>
+                     <div id="tablacontent">
+                        <table class="tablesorter">
+                        <thead>
+                	    <tr>
+                                <td id="cuadrito">
+                                    <form>
+                                        <input type="checkbox" />
+                                    </form>
+                                </td>
+                                <th id="parade">De</th>
+                                <th id="asunto">Asunto</th>
+                                <th id="fecha">Fecha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="noleido">
+                                <td>
+                                    <form>
+                                        <input type="checkbox" />
+                                    </form>
+                                </td>
+                                <td class="mende">Student01</td>
+                        	<td class="menasunto"><a href="#">Languages</a></td>
+                        	<td class="menfecha">9/5/2011</td>		
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form>
+                                        <input type="checkbox" />
+                                    </form>
+                                </td>
+                                <td class="mende">Student02</td>
+                        	<td class="menasunto leido"><a href="#">Language</a></td>
+                        	<td class="menfecha">12/5/2011</td>		
+                            </tr
+                            <tr>
+                                <td>
+                                    <form>
+                                        <input type="checkbox" />
+                                    </form>
+                                </td>
+                                <td class="mende">Student02</td>
+                        	<td class="menasunto leido"><a href="#">anguages</a></td>
+                        	<td class="menfecha">10/5/2011</td>		
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form>
+                                        <input type="checkbox" />
+                                    </form>
+                                </td>
+                                <td class="mende">Student03</td>
+                        	<td class="menasunto leido"><a href="#">Lanuages</a></td>
+                        	<td class="menfecha">11/5/2011</td>		
+                            </tr>              
+                        </tbody>
+                        </table>
+                     </div>               
+                </div>  
+           </div>
+	</div>	    
+	<div id="panelder">
+	    <div id="conectados">
+		<p id="lineaconect">En Linea</p>
+		<ul>
+		    <li>
+			<img class="imgconectados" src="img/angelmtz.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Angel Martinez</span>			
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/cinthia.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Cinthia Avila</span>			
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/erick.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Erick Castañeda</span>			
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/fuji.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Fuji</span>
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/vero.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Vero Olmos</span>
+		    </li>
+		     <li>
+			<img class="imgconectados" src="img/angelmtz.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Angel Martinez</span>
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/angelmtz.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Angel Martinez</span>
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/angelmtz.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Angel Martinez</span>
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/cinthia.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Cinthia Avila</span>
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/cinthia.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Cinthia Avila</span>
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/cinthia.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Cinthia Avila</span>			
+		    </li>
+		     <li>
+			<img class="imgconectados" src="img/angelmtz.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Angel Martinez</span>			
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/cinthia.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Cinthia Avila</span>			
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/erick.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Erick Castañeda</span>			
+		    </li>
+		    <li>
+			<img class="imgconectados" src="img/fuji.jpg">
+			<a href="#"><img class="imgregalo" title="Flirt" src="img/regalo.png"></a>
+			<a href="#"><img class="imgmail" title="Mandar Mensaje"src="img/mailnaranja.png"></a>
+			<span class="letconectados">Fuji</span>
+		    </li>
+		    
+		    <li class="conocemas"><a href="#"  class="conocemas">Ver mas >></a></li>
+		    <!--<li class="conocemas"><a href="#"  class="conocemas">Conoce a mas amigos >></a></li>!-->
+	    </div>
+	</div>
+    </div>
+    
+    
+    <footer>
+	<div id="foot-izq">
+	    <ul id="pie">
+		<li><a href="#">Conocer gente</a></li>
+		<li><a href="#">Votado del dia</a></li>
+		<li><a href="#">Terminos y Condiciones</a></li>
+		<li><a href="#">Contacto</a></li>
+	    </ul>
+	</div>
+	<div id="foot-der">
+	    <a href="#"><img src="img/masuno.png"></a><br />
+	    <a href="#"><img src="img/followface.png"></a>
+	</div>
+    </footer>
+    <div class="clearfix"></div>
+    <div id="derechos">Copyright @2011 Todos los derechos reservados.</div>
+    </body>
+</html>

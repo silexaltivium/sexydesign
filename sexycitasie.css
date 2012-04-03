@@ -1,0 +1,68 @@
+footer{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbc701', endColorstr='#dcb114');
+}
+
+#anterior{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d32000', endColorstr='#a41a00');
+    border-radius:7px;
+    behavior: url(ie-css3.htc);    
+}
+
+.calif{
+    background: #fcdd64;
+    filter: alpha(opacity=70);
+}
+
+#siguiente{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67a238', endColorstr='#568c2c');
+    border-radius: 7px;
+    behavior: url(ie-css3.htc);
+}
+    
+#basefoto{
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=3); 
+}
+
+#panel{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0192bf', endColorstr='#016585');
+}
+
+.bt_register{
+    background:url(img/bt_register.png) no-repeat;
+}
+
+.bt_login{
+    background:url(img/bt_login.png) no-repeat;    
+}
+
+#datosfoto{
+    background:#a1cdfb;
+    filter: alpha(opacity=70);
+}
+
+#suplogo{
+    height:42px;
+    background:url(img/sexycitas.png) no-repeat;
+    border:none !important;
+    position:relative;
+}
+
+#compie{
+    position:absolute;
+    top:0;
+    margin-left:156px;
+    height:37px;
+    width:85.6%;
+    border-bottom:solid 2px #fff;
+    background:#005b7b;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#dfdfdf', Direction=180, Strength=3); 
+}
+#logoh1{
+    text-indent:-999em !important;
+}
+
+.imgamigos{
+    padding:5px 5px 5px 5px;
+   border:solid 1px #969696;
+   filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=3); 
+}
